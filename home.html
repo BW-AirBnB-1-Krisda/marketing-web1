@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TopChill - Book Now!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async="async" src="https://static.mobilemonkey.com/js/100643195176566.js"></script>
+</head>
+
+<body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v8.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="100643195176566"
+theme_color="#6AD5CB"
+logged_in_greeting="Hello! How can we help you?"
+logged_out_greeting="Hello! How can we help you?">
+</div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!--Beginning of Navigation Section-->
+    <section>
+        <nav>
+            <div class="Logo">
+                <h1 class="ml1">
+                    <span class="text-wrapper">
+                      <span class="line line1"></span>
+                    <span class="letters"><img class="size-logo" src="assets/Mock-Logo.png" alt="logo"></span>
+                    <span class="line line2"></span>
+                    </span>
+                </h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://top-chill-krisda.vercel.app/register">Register</a></li>
+                <li><a href="https://top-chill-krisda.vercel.app/login">Login</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+        </nav>
+    </section>
+    <!--End of Navigation Section-->
+    </div>
+    <section class="flexLanding" class="container">
+        <div class="flexLanding LandingItem1"><img src="assets/cucumberdog.jpg" alt="cucumberdog" class="responsive">
+        </div>
+        <!--<div class="bottom-left">Bottom Left</div>
+            <div class="top-left">Top Left</div>
+            <div class="top-right">Top Right</div>
+            <div class="bottom-right">Bottom Right</div>-->
+        <div class="centered">
+            <!--Beginning of Search Bar-->
+            <div class="s01">
+                <form>
+                  <fieldset>
+                    <legend>find your getaway in seconds</legend>
+                  </fieldset>
+                  <div class="inner-form">
+                    <div class="input-field first-wrap">
+                      <input id="search" type="text" placeholder="hotel, flight, car ... " />
+                    </div>
+                    <div class="input-field second-wrap">
+                      <input id="location" type="text" placeholder="location" />
+                    </div>
+                    <div class="input-field third-wrap">
+                      <button class="btn-search" type="button">Search</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            <!--End of Search Bar-->
+        </div>
+        </section>    
+        <div class="flexLanding LandingItem2"></div>
+    </section>
+    <!-- About, Projects, and Contact--><br><br>
+    <section class="flexAbout">
+        <h4>CROSS OFF YOUR BUCKET LIST</h4>
+        <div class="flexAbout AboutItem1">
+            <div class="topchillabout">
+                <p class="vacation">
+                    
+                    Expensive vacations and difficult to pin the best price? Stuck at home with nothing to do?
+                    Our private locations and trusted properties are secluded- the best place to relax and have a change of pace.
+                    We can find the best-priced spots and customize your experience to you. Our 24-hour travel chat is here for you,
+                    so you can enjoy your getaway and have a memory of a lifetime. Contact a rep today!
+                       
+                </p>
+            </div>
+
+                    <section class="product">
+                        <div class="product__photo">
+                            <div class="photo-container">
+                                <div class="photo-main">
+                                    <div class="controls">
+                                        <a href ="#"><img class="share" title="share" src="assets/share-btn.png"/></a>
+                                        <a href ="#"><img class="fav" title="favorite" src="assets/white-heart.png"/></a>
+                                    </div>
+                                    <img class="image-blurred-edge" src="assets/cabin2.jpg" alt="another cabin">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <div class="price">
+                               <span class="tool">
+                                   <span class="optimize">USE OUR OPTIMIZED PRICING TOOL</span><br><br><br>
+                                    Easy tool to make your travel plans a piece of cake.<br><br>
+                                    Award-winning vetted properties for clean and comfortable surroundings.<br><br>
+                                    24-hour FREE bar service. A professional Chef add-on is also available.<br><br>
+                                </span>
+                                <li><a class="button" class="BookNow" class="center" href="#"><span>Book Now!</span></a></li>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!--Marketing site replace placeholder copy with description of product. Be creative here. Really try and describe your project, your project's features and of course have a cool "About Us" page with relevant copy that describes your team members and their roles.-->
+        </div>
+        <div class="flexAbout AboutItem2"></div>
+    </section>
+<!--Houses, Cabins, and Private Theaters-->
+<br><br>
+<section class="parentFlex">
+    <section class="childFlex flexTheater">
+        <div class="card text-center">
+            <div class="card-header">
+              <span class="text-header">Private Theaters</span><br><br>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"> Waiting for your favorite movie in IMAX HD?</h5>
+              <p class="card-text">Private Theaters are available for rental.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a> <span id="pointer">&#x293E;</span>
+            </div>
+            <div class="card-footer text-muted">
+                <p class="tinyText"> "Best theater I've ever been. No babies anywhere." - Ron Swanson, Location Unknown</p>
+                &#11089; 	&#11089; &#11089; &#11089; 	&#11089;
+            </div>
+          </div>
+    </section>
+
+    <section class="childFlex flexCabin">
+        <div class="card text-center">
+            <div class="card-header">
+              <span class="text-header">Cabin</span><br><br>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"> Waiting for your favorite cabin in the woods?</h5>
+              <p class="card-text">Cabins are available for your next adventure.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a> <span id="pointer">&#x293E;</span>
+            </div>
+            <div class="card-footer text-muted">
+                <p class="tinyText"> "Best cabin I've ever been. No babies anywhere." - Ron Swanson, Location Unknown</p>
+                &#11089; 	&#11089; &#11089; &#11089; 	&#11089;
+            </div>
+    </section>
+
+    <section class="childFlex flexCondo">
+        <div class="card text-center">
+            <div class="card-header">
+              <span class="text-header">Condo</span><br><br>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"> Waiting for your favorite condo?</h5>
+              <p class="card-text">Condos are available for your next adventure.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a> <span id="pointer">&#x293E;</span>
+            </div>
+            <div class="card-footer text-muted">
+                <p class="tinyText"> "Best condo I've ever been. No babies anywhere." - Ron Swanson, Location Unknown</p>
+                &#11089; 	&#11089; &#11089; &#11089; 	&#11089;
+            </div>
+    </section>
+
+    <section class="childFlex flexHouse">
+        <div class="card text-center">
+            <div class="card-header">
+              <span class="text-header">House</span><br><br>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"> Waiting for your favorite house?</h5>
+              <p class="card-text">Houses are available for your next adventure.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a> <span id="pointer">&#x293E;</span>
+            </div>
+            <div class="card-footer text-muted">
+                <p class="tinyText"> "Best house I've ever been. No babies anywhere." - Ron Swanson, Location Unknown</p>
+                &#11089; 	&#11089; &#11089; &#11089; 	&#11089;
+            </div>
+    </section>
+
+    <section class="childFlex flexRelax">
+        <div class="card text-center">
+            <div class="card-header">
+              <span class="text-header">Relax ...</span><br><br>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><br><br></h5>
+              <p class="card-text">Breathe and getaway</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a> <span id="pointer">&#x293E;</span>
+            </div>
+            <div class="card-footer text-muted">
+                <p class="tinyText"> "Best bar service. I don't use anything other than TopChill now." - Lisa Simpson, Springfield, OR</p>
+                &#11089; 	&#11089; &#11089; &#11089; 	&#11089;
+            </div>
+    </section>
+
+    <section class="childFlex flexAgent">
+        <div class="card text-center">
+            <div class="card-header">
+              <span class="text-header">Agents</span><br><br>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"> 24-hour chat</h5>
+              <p class="card-text"><br><br></p>
+              <a href="#" class="btn btn-primary">Chat Now</a> <span id="pointer">&#x293E;</span>
+            </div>
+            <div class="card-footer text-muted">
+                <p class="tinyText"> "Best customer service I've ever seen. Wow." - Morty Smith Sr., Seattle, WA</p>
+                &#11089; 	&#11089; &#11089; &#11089; 	&#11089;
+            </div>
+    </section>
+</section>
+    <nav>
+    <footer role="contentinfo" class="footeritem bottom">
+        <span class="footeritem footer1"><a href="home.html">Home</a></span>
+        <span class="footeritem footer2"><a href="about.html">About</a></span>
+        <span class="footeritem footer3"><a href="contact.html">Contact</a></span>
+        <span class="footeritem footer4"><a href="about.html">Team</a></span>
+        <span class="footeritem footer5">&#169; 2020 TopChill Inc.</span>
+    </footer>
+    </section>
+
+</section>
+
+    </nav>
+    <script src="app.js "></script>
+</body>
+<!--# Responsive-Design
+
+### Task 2: Minimum Viable Product
+
+Use the checklist below to guide your work today. Your final product should be presentable at mobile, tablet and a desktop-width.
+
+- [ X ] Insert a viewport meta tag into the head of the project with these html attributes: content="width=device-width, initial-scale=1 "
+- [ ] Introduce max-width media queries into your project at 800px and 500px
+- [ ] Add accessability features to your webpage
+- [ ] Design should closely follow the [mobile wireframe](Wireframes/) given for your chosen layout
+
+
+### Task 3: Stretch Goals
+
+Once you finish the minimum viable project, work on any of the following stretch goals:
+
+- [ ]  Test your website at several breakpoints and refactor code as needed. A few common breakpoints are below:
+  - [ ]  iPhone: 360×640
+  - [ ]  Laptop: 1366×768
+  - [ ]  Widescreen: 1920×1080
+- [ ] Test your webpage's accessibility with a screen reader like [this](https://support.google.com/accessibility/answer/7031755?hl=en)
+- [ ] Start over with min-width media queries to get a feel for how a mobile first approach would be like. I recommend making a branch of all your content in a new folder named "mobile-first " to keep it separate
+- [ ] Test your webpage's accessibility with a screen reader like [this](https://support.google.com/accessibility/answer/7031755?hl=en)
+
+-->
+
+</html>

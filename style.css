@@ -1,0 +1,1484 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	height: 250vh;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Meyer CSS Reset Above */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Bebas Neue', cursive;
+}
+
+img {
+	display: 100%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: white;
+}
+
+
+/*
+Original Text Version of Logo
+.Logo {
+}
+*/
+
+
+/* class below for logo sizing and cucumber dog */
+
+.size-logo {
+	width: 13rem;
+	height: 13rem;
+	border-radius: 80%;
+}
+
+.cucumber {
+	width: 100%;
+	height: 100%;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+}
+
+.nav-links li {
+	list-style-type: none;
+}
+
+
+/* increased nav font size with vw */
+
+.nav-links a {
+	color: black;
+	text-decoration: none;
+	letter-spacing: 0.3rem;
+	font-weight: bold;
+	font-size: 1.2vw;
+}
+
+
+/* changed nav hovers to increase in size with vw  */
+
+.nav-links a:hover {
+	text-decoration: italic;
+	font-size: 1.6vw;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+.burger div {
+	width: 25px;
+	height: 3px;
+	background-color: grey;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px) {
+	.nav-links {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width:768px) {
+	body {
+		overflow-x: hidden;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: gray;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100vw;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		z-index: 1;
+	}
+	.nav-links li {
+		opacity: 100;
+	}
+	.burger {
+		display: block;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/* Made with Love JS Animation below*/
+
+.ml16 {
+	color: #402d2d;
+	padding: 40px 0;
+	font-weight: 800;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	overflow: hidden;
+	text-align: center;
+}
+
+.ml16 .letter {
+	display: inline-block;
+	line-height: 1em;
+}
+
+
+/*Nav Name at Top of Page Animation */
+
+.ml1 {
+	font-weight: 250;
+	font-size: 1.5em;
+}
+
+.ml1 .letter {
+	display: inline-block;
+	line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+	position: relative;
+	display: inline-block;
+	padding-top: 0.1em;
+	padding-right: 0.05em;
+	padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	background-color: #fff;
+	transform-origin: 0 0;
+}
+
+.ml1 .line1 {
+	top: 0;
+}
+
+.ml1 .line2 {
+	bottom: 0;
+}
+
+
+/* Header Nav and Animations Above */
+
+
+/* Body Below  */
+
+.flexLanding {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.flexLanding .LandingItem1 {}
+
+.flexLanding .LandingItem2 {}
+
+
+/* Landing Section Above */
+
+.flexAbout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.vacation {
+	font-size: 1.5vw;
+	margin: 3% 1%;
+	line-height: 1.8;
+	text-align: justify;
+	font-family: helvetica;
+}
+
+.tool {
+	font-size: 1.5vw;
+}
+
+.optimize {
+	font-size: 2vw;
+}
+
+
+/* About Section Above */
+
+
+/* parentFlex container below */
+
+.parentFlex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.childFlex {
+	image-rendering: optimizeQuality;
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	border-radius: 5%;
+	text-decoration: none;
+	text-shadow: 2px 2px black;
+	box-shadow: 8px 5px 8px black;
+	background-size: cover;
+	height: 30%;
+	width: 35%;
+	margin: 2%;
+}
+
+
+/* Theater Card Below */
+
+.flexTheater {
+	background-image: url(assets/privatetheater.jpg);
+}
+
+.text-header {
+	font-size: 3rem;
+	margin-top: 1%;
+	text-shadow: 5px 5px black;
+}
+
+#pointer {
+	height: 0.5rem;
+	width: 0.5rem;
+	color: white;
+}
+
+.flexTheater div.text-center div.card-body a {
+	color: white;
+	text-decoration: none;
+}
+
+.flexTheater div.text-center div.card-body a:hover {
+	color: crimson;
+}
+
+.tinyText {
+	font-size: 1rem;
+	text-shadow: 2px 2px black;
+}
+
+section.flexAbout div.topchillabout ul.tinyList {
+	font-size: 0.3em;
+	text-align: center;
+}
+
+section.flexTheater div.flexTheater {}
+
+
+/* Theater Section Above */
+
+
+/* Cabin Section Below */
+
+.flexCabin {
+	background-image: url(assets/cabin.jpg);
+}
+
+.flexCabin div.text-center div.card-body a {
+	color: white;
+	text-decoration: none;
+}
+
+.flexCabin div.text-center div.card-body a:hover {
+	color: forestgreen;
+}
+
+.flexCabin .CabinItem1 {}
+
+.flexCabin .CabinItem2 {}
+
+
+/* Condo Section Below */
+
+.flexCondo {
+	background-image: url(assets/condo.jpg);
+}
+
+.flexCondo div.text-center div.card-body a {
+	color: white;
+	text-decoration: none;
+}
+
+.flexCondo div.text-center div.card-body a:hover {
+	color: lightgrey;
+}
+
+.flexCondo .CondoItem1 {}
+
+.flexCondo .CondoItem2 {}
+
+
+/* House Section Below */
+
+.flexHouse {
+	background-image: url(assets/house.jpg);
+}
+
+.flexHouse div.text-center div.card-body a {
+	color: white;
+	text-decoration: none;
+}
+
+.flexHouse div.text-center div.card-body a:hover {
+	color: forestgreen;
+}
+
+.flexHouse .HouseItem1 {}
+
+.flexHouse .HouseItem2 {}
+
+.flexRelax {
+	background-image: url(assets/relaxedman.jpg);
+}
+
+.flexRelax a {
+	text-decoration: none;
+	color: white;
+}
+
+.flexRelax a:hover {
+	color: chocolate;
+}
+
+.flexAgent {
+	background-image: url(assets/agent.jpg);
+}
+
+.flexAgent a {
+	background-image: url(assets/agent.jpg);
+	text-decoration: none;
+	color: white;
+}
+
+.flexAgent a:hover {
+	color: black;
+}
+
+.flexCompany {
+	background-image: url(assets/cabin2.jpg);
+}
+
+.flexCompany a {
+	background-image: url(assets/agent.jpg);
+	text-decoration: none;
+	color: white;
+}
+
+.flexCompany a:hover {
+	color: black;
+}
+
+
+/* 10 Team Members Below */
+
+.flexBaby {
+	height: 25%;
+	width: 25%;
+	margin: 2%;
+	padding: 1%;
+	background-size: cover;
+	border-radius: 1%;
+	color: #6AD5CB;
+	font-optical-sizing: auto;
+	box-shadow: 2px 2px 2px black;
+}
+
+.flexHeader {
+	display: flex;
+	background-image: url(assets/Top-Chill-Dev-Team.png);
+	background-size: cover;
+	height: 80%;
+	width: 80%;
+	padding: 12% 25%;
+	background-size: cover;
+}
+
+.flexTimeMoney {
+	background-image: url(assets/timemoney.jpg);
+	background-size: contain;
+	height: 100%;
+	width: 150%;
+	font-size: 2vw;
+	text-shadow: 2px 2px 2px white;
+}
+
+.flexBaby .card-title {
+	text-shadow: 1px 1px 1px black;
+	font-optical-sizing: auto;
+}
+
+.flexPauline {
+	background-image: url(assets/Pauline.png);
+}
+
+.flexJulie {
+	background-image: url(assets/Julie.png);
+}
+
+.flexMark {
+	background-image: url(assets/Mark.png);
+}
+
+.flexAngelyn {
+	background-image: url(assets/Angelyn.png);
+}
+
+.flexJonathan {
+	background-image: url(assets/Jonathan.png);
+}
+
+.flexYinmi {
+	background-image: url(assets/Yinmi.png);
+}
+
+.flexRose {
+	background-image: url(assets/Rose.png);
+}
+
+.flexHenry {
+	background-image: url(assets/Henry.png);
+}
+
+.flexKris {
+	background-image: url(assets/Kris.png);
+}
+
+
+/* Skills Section Above */
+
+.flexContact {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.flexContact .ContactItem1 {}
+
+.flexContact .ContactItem2 {}
+
+
+/* Contact Form Above */
+
+
+/* flexContact Section above  */
+
+section.flexLanding div.flexLanding img {
+	height: 90vh;
+}
+
+.rainbowkeyboard {}
+
+
+/*landing page image for project page */
+
+.wireframe {}
+
+
+/* Computer Images Above */
+
+
+/* change image on Projects page and other pages to differentiate */
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
+
+
+/* Responsive Properties and Values Above  */
+
+p {
+	margin: 2rem;
+	text-align: center;
+}
+
+
+/* Paragraph Spacing above  */
+
+
+/* Container holding the image and the text */
+
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+
+/* Bottom  left text */
+
+.bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+}
+
+
+/* Top left text */
+
+.top-left {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+}
+
+
+/* Top right text */
+
+.top-right {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+}
+
+
+/* Bottom right text */
+
+.bottom-right {
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+}
+
+
+/* Centered Button and Text */
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/* LearnButton Below */
+
+.LearnButton {
+	padding: 0.2rem 5rem;
+	margin: 0.2rem;
+	text-decoration: none;
+	border-radius: 40%;
+	font-size: 5.5rem;
+}
+
+.centered a:hover {
+	background-color: black;
+}
+
+
+/* Arrow on Hover Button */
+
+.button {
+	border-radius: 15px;
+	background-color: #6AD5CB;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px 40px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
+/* About Me Picture Below */
+
+h3 {
+	font-weight: bold;
+	color: rgba(66, 59, 59, 0.644);
+}
+
+h4 {
+	font-size: 3.8vw;
+	font-weight: bold;
+	margin: 2%;
+}
+
+.whoWeAre {
+	font-size: 12vw;
+	margin-top: 0;
+}
+
+.topchillabout {
+	width: 70%;
+	height: 40%;
+	font-family: helvetica;
+}
+
+.history {
+	font-size: 1.5vw;
+	line-height: 1.5;
+	font-family: Helvetica;
+	text-align: justify;
+}
+
+.placeholder {
+	background-color: rgb(86, 71, 71);
+	border: 0.2rem solid black;
+	height: 20%;
+	width: 30%;
+}
+
+.placeholder:hover {
+	border: 0.2rem dashed rgb(8, 62, 8);
+}
+
+
+/* Resume Button Below  */
+
+
+/* Resume and Book Now Button Below */
+
+section.flexAbout h4 {
+	margin-top: 0%;
+}
+
+section.flexAbout {
+	margin: 5%;
+}
+
+section.flexAbout div.flexAbout li {
+	padding: 0.2rem 5rem;
+	margin: 0.2rem;
+	border-radius: 40%;
+	font-size: 5.5rem;
+	list-style-type: none;
+	text-align: center;
+	text-decoration: none;
+}
+
+section.flexAbout div.flexAbout li .button {
+	background-color: #6AD5CB;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 2vw;
+	text-decoration: none;
+}
+
+section.flexAbout div.flexAbout li .button:hover {
+	background-color: black;
+}
+
+.center {
+	text-align: center;
+}
+
+
+/* CSS Specificity is
+a weight that is applied to a given
+CSS declaration from parent to child element. */
+
+section.flexAbout div.flexAbout li {
+	list-style-type: none;
+}
+
+.BookNow {
+	padding: 1rem 7rem;
+	margin: 0.2rem;
+	text-decoration: none !important;
+	border-radius: 40%;
+	font-size: 5.5rem;
+	list-style-type: none;
+}
+
+section.flexProjects div.flexProjects figcaption {
+	text-align: center;
+	margin: 5rem;
+}
+
+
+/*  CSS for Project Page Below */
+
+.gallery {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.moveToBottom {
+	margin-top: 20rem;
+}
+
+.bottom {
+	height: 8vh;
+	width: 100%;
+	background-color: black;
+	padding: 8px 100px;
+	margin: 0 0;
+	text-align: center;
+}
+
+footer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 0.2rem;
+}
+
+.footeritem {
+	margin: 0 3%;
+}
+
+footer a {
+	text-decoration: none;
+	color: gray;
+	margin: 30%;
+}
+
+footer span {
+	color: white;
+	letter-spacing: 0.5vh;
+}
+
+footer a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+
+/*CSS for Project Page Above*/
+
+
+/* Add Search Bar Below */
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-before: 0;
+	-webkit-padding-start: 0;
+	-webkit-padding-end: 0;
+	-webkit-padding-after: 0;
+	border: 0;
+}
+
+legend {
+	margin: 0;
+	padding: 0;
+	display: block;
+	-webkit-padding-start: 0;
+	-webkit-padding-end: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.s01 {
+	min-height: 100vh;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	background: url("../images/Search_001.png");
+	background-size: cover;
+	background-position: center center;
+	padding: 15px;
+}
+
+.s01 form {
+	width: 100%;
+	max-width: 1290px;
+}
+
+.s01 form legend {
+	font-size: 72px;
+	line-height: 1;
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+.s01 form .inner-form {
+	background: rgba(0, 0, 0, 0.5);
+	padding: 50px 47px;
+	display: -ms-flexbox;
+	display: flex;
+	width: 50rem;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.s01 form .inner-form .input-field {
+	margin-right: 30px;
+	height: 68px;
+}
+
+.s01 form .inner-form .input-field input {
+	height: 100%;
+	background: #fff;
+	border-radius: .5px;
+	border: 0;
+	display: block;
+	width: 100%;
+	padding: 10px 32px;
+	font-size: 20px;
+}
+
+.s01 form .inner-form .input-field input.placeholder {
+	color: #9a9a9a;
+	font-size: 20px;
+}
+
+.s01 form .inner-form .input-field input:-moz-placeholder {
+	color: #9a9a9a;
+	font-size: 20px;
+}
+
+.s01 form .inner-form .input-field input::-webkit-input-placeholder {
+	color: #9a9a9a;
+	font-size: 20px;
+}
+
+.s01 form .inner-form .input-field input:hover,
+.s01 form .inner-form .input-field input:focus {
+	box-shadow: none;
+	outline: 0;
+}
+
+.s01 form .inner-form .input-field.first-wrap {
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.s01 form .inner-form .input-field.second-wrap {
+	width: 32.77%;
+	min-width: 180px;
+}
+
+.s01 form .inner-form .input-field.third-wrap {
+	width: 180px;
+	margin-right: 0;
+}
+
+.s01 form .inner-form .input-field.third-wrap .btn-search {
+	height: 100%;
+	width: 100%;
+	background: #6AD5CB;
+	white-space: nowrap;
+	border-radius: .5px;
+	font-size: 20px;
+	color: #fff;
+	transition: all .2s ease-out, color .2s ease-out;
+	border: 0;
+	cursor: pointer;
+}
+
+.s01 form .inner-form .input-field.third-wrap .btn-search:hover {
+	background: black;
+}
+
+@media screen and (max-width: 992px) {
+	.s01 form legend {
+		font-size: 50px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.s01 form .inner-form {
+		padding: 30px 35px;
+	}
+	.s01 form .inner-form .input-field {
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.s01 form legend {
+		font-size: 40px;
+		margin-bottom: 40px;
+	}
+	.s01 form .inner-form {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		padding: 20px;
+	}
+	.s01 form .inner-form .input-field {
+		margin-right: 0;
+	}
+	.s01 form .inner-form .input-field input {
+		padding: 5px 15px;
+		font-size: 16px;
+	}
+	.s01 form .inner-form .input-field.first-wrap {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.s01 form .inner-form .input-field.second-wrap {
+		width: calc(50% - 10px);
+		min-width: auto;
+	}
+	.s01 form .inner-form .input-field.third-wrap {
+		width: calc(50% - 10px);
+	}
+	.s01 form .inner-form .input-field.third-wrap .btn-search {
+		font-size: 16px;
+	}
+}
+
+
+/* Start of Product Card on Home Page*
+
+  /* ----- Variables ----- */
+
+$color-primary: #4c4c4c;
+$color-secondary: #a6a6a6;
+$color-highlight: #ff3f40;
+
+/* ----- Global ----- */
+
+h3 {
+	font-size: 0.7em;
+	letter-spacing: 1.2px;
+	color: $color-secondary;
+}
+
+img {
+	max-width: 100%;
+	filter: drop-shadow(1px 1px 3px $color-secondary);
+}
+
+
+/* ----- Product Section ----- */
+
+.product {
+	display: grid;
+	grid-template-columns: 0.9fr 1fr;
+	margin: auto;
+	padding: 2.5em 0;
+	min-width: 600px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+
+/* ----- Photo Section ----- */
+
+.product__photo {
+	position: relative;
+}
+
+.photo-container {
+	position: absolute;
+	left: 10%;
+	display: grid;
+	grid-template-rows: 1fr;
+	width: 70%;
+	height: 85%;
+	border-radius: 6px;
+	box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+}
+
+.share {
+	height: 10%;
+	width: 10%;
+	margin: 8%;
+}
+
+
+/* margins : top | right | bottom | left */
+
+.fav {
+	height: 14%;
+	width: 14%;
+	margin-left: 50%;
+	margin-bottom: 6%;
+}
+
+.photo-main {
+	border-radius: 6px 6px;
+	background-color: rgb(173, 80, 80);
+	background: radial-gradient(forestgreen, rgb(76, 78, 70));
+	align-items: flex-end;
+	.controls {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.2em;
+		color: #fff;
+		i {
+			cursor: pointer;
+		}
+	}
+	img {
+		position: absolute;
+		left: -3.5em;
+		top: 2em;
+		max-width: 110%;
+		filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+	}
+}
+
+
+/* ----- Informations Section ----- */
+
+.product__info {
+	padding: 0.8em 0;
+}
+
+.title {
+	h1 {
+		margin-bottom: 0.1em;
+		color: $color-primary;
+		font-size: 1.5em;
+		font-weight: 900;
+	}
+	span {
+		font-size: 0.7em;
+		color: $color-secondary;
+	}
+}
+
+.price {
+	margin: 1.5em 0;
+	color: $color-highlight;
+	font-size: 1.2em;
+	span {
+		padding-left: 0.15em;
+		font-size: 2.9em;
+	}
+}
+
+.variant {
+	overflow: auto;
+	h3 {
+		margin-bottom: 1.1em;
+	}
+	li {
+		float: left;
+		width: 35px;
+		height: 35px;
+		padding: 3px;
+		border: 1px solid transparent;
+		border-radius: 3px;
+		cursor: pointer;
+		&:first-child,
+		&:hover {
+			border: 1px solid $color-secondary;
+		}
+	}
+	li:not(:first-child) {
+		margin-left: 0.1em;
+	}
+}
+
+.description {
+	clear: left;
+	margin: 2em 0;
+	h3 {
+		margin-bottom: 1em;
+	}
+	ul {
+		font-size: 0.8em;
+		list-style: disc;
+		margin-left: 1em;
+	}
+	li {
+		text-indent: -0.6em;
+		margin-bottom: 0.5em;
+	}
+}
+
+.buy--btn {
+	padding: 1.5em 3.1em;
+	border: none;
+	border-radius: 7px;
+	font-size: 0.8em;
+	font-weight: 700;
+	letter-spacing: 1.3px;
+	color: #fff;
+	background-color: $color-highlight;
+	box-shadow: 2px 2px 25px -7px $color-primary;
+	cursor: pointer;
+	&:active {
+		transform: scale(0.97);
+	}
+}
+
+
+/* ----- Footer Section ----- */
+
+footer {
+	padding: 1em;
+	text-align: center;
+	color: #fff;
+	a {
+		color: $color-primary;
+		&:hover {
+			color: $color-highlight;
+		}
+	}
+}
+
+
+/* End of Product Card on Home Page */
+
+
+/* Start of Profile Cards on About Page */
+
+
+/* 7:22 tutorial timestamp transition effect*/
+
+.profileCard,
+.front-face,
+.contents,
+.back-face {
+	/* position: absolute; */
+}
+
+.card-container {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 1%;
+	height: 70%;
+	width: 100%;
+}
+
+.back-face h2 {
+	margin-top: 50%;
+}
+
+.profileCard {
+	margin-top: 0;
+	margin-bottom: 5%;
+	right: 20%;
+	transform: translate(15%, 40%);
+	margin-left: 5%;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	margin-bottom: 5%;
+}
+
+.front-face,
+.back-face {
+	top: 0;
+	left: 0;
+	height: 70vh;
+	width: 25vw;
+	text-align: center;
+	border-radius: 5%;
+	border: 2px solid black;
+	background-image: url(assets/...);
+	background-size: cover;
+	background-position: center;
+	backface-visibility: hidden;
+	transition: .5s;
+	position: absolute;
+}
+
+.front-face {
+	background-image: url("https://assets.codepen.io/3163723/hammock_50.jpg");
+}
+
+.back-face {
+    background-image: url("https://assets.codepen.io/3163723/large-hammock_50.jpg");
+}
+
+.contents img {
+	border-radius: 50%;
+}
+
+.spacer {
+	height: 74vh;
+	width: 24vw;
+}
+
+.tinySpacer {
+	width: 10vw;
+}
+
+.contents {
+	left: 0;
+	top: 50%;
+	width: 100%;
+	perspective: 100px;
+	transform: translateY(-5%) translateZ(30px) scale(.94);
+	font-size: 2vw;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.back-face {
+	transform: rotateY(180deg);
+}
+
+.back {
+	color: white;
+}
+
+.icons {
+	margin: 10px 0;
+}
+
+.social-icons .fa {
+	color: #4c738d;
+	font-size: 2vw;
+	height: 5.1vh;
+	width: 3.3vw;
+	background: white;
+	border-radius: 50%;
+	line-height: 5vh;
+	margin: 5% 0 0 0.5%;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.profileCard:hover>.back-face {
+	transform: rotateY(0deg);
+}
+
+.profileCard:hover>.front-face {
+	transform: rotateY(-180deg);
+}
+
+
+/* End of Profile Cards on About Page */
+
+
+/* Start of Parallax */
+
+
+/* The image used */
+
+background-image: url(https://www.freevector.com/isometric-cabin-vector-design-26740);
+
+/* Set a specific height */
+
+height: 500px;
+
+/* Create the parallax scrolling effect */
+
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+/* End of Parallax */

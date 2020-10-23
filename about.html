@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]--> 
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TopChill - Book Now!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async="async" src="https://static.mobilemonkey.com/js/100643195176566.js"></script>
+</head>
+
+<body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v8.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="100643195176566"
+theme_color="#6AD5CB"
+logged_in_greeting="Hello! How can we help you?"
+logged_out_greeting="Hello! How can we help you?">
+</div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!--Beginning of Navigation Section-->
+    <section>
+        <nav>
+            <div class="Logo">
+                <h1 class="ml1">
+                    <span class="text-wrapper">
+                      <span class="line line1"></span>
+                    <span class="letters"><img class="size-logo" src="assets/Mock-Logo.png" alt="logo"></span>
+                    <span class="line line2"></span>
+                    </span>
+                </h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://top-chill-krisda.vercel.app/register">Register</a></li>
+                <li><a href="https://top-chill-krisda.vercel.app/login">Login</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+        </nav>
+    </section>
+    <!--End of Navigation Section-->
+    </div>
+    <section class="flexLanding" class="container">
+        <div class="flexLanding LandingItem1"><img src="assets/about.jpg" alt="about" class="responsive">
+        </div>
+        <!--<div class="bottom-left">Bottom Left</div>
+            <div class="top-left">Top Left</div>
+            <div class="top-right">Top Right</div>
+            <div class="bottom-right">Bottom Right</div>-->
+        <div class="centered">
+            <span class="whoWeAre" role="banner">Who We Are</span><br><br><br><br>
+            <a class="button" class="LearnButton" href="#"><span>Learn More</span></a>
+            <br><br><br><br>
+        </div>
+        <div class="flexLanding LandingItem2"></div>
+    </section>
+    <!-- About Section Only -->
+    <section class="flexAbout">
+        <h4>MEET TOPCHILL</h4>
+        <div class="flexAbout AboutItem1">
+            <div class="topchillabout">
+                <p class="history">Using historical booking data from AirBnB, AirBnB Optimal Price will allow a user to predict the trends for optimal pricing for their properties based on variables such as location, time of year and other considerations. The user will
+                    be able to manage multiple properties at different locations and be able to make adjustments to their expectations for booking, as well as what they should be charging.</p>
+                <!--Marketing site replace placeholder copy with description of product. Be creative here. Really try and describe your project, your project's features and of course have a cool "About Us" page with relevant copy that describes your team members and their roles.-->
+            </div>
+            <li><a class="button" class="BookNow" class="center" href="#"><span>Book Now!</span></a></li>
+        </div>
+        <div class="flexAbout AboutItem2"></div>
+    </section>
+    <br><br>
+    <!-- Beginning of Middle Section for Flex Items -->
+    <section class="parentFlex">
+        <section class="flexBaby flexHeader">
+    </section>
+
+        <!-- <section class="flexBaby flexTimeMoney" class="card" style="width: 18rem;">
+            <div class="card-body">
+              <p class="card-text">Save time and money with our rental optimization tool</p>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </section>
+
+<div class="placeholder"></div> -->
+<!-- profileCard is card container -->
+<section class="card-container">
+<div class="profileCard flexCard1">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>Pauline Haren</p>
+            <img src="https://assets.codepen.io/3163723/Pauline.png" border-radius="30%" height="60%" width="60%"/>
+            <p>description</p>
+          </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>Pauline Haren<br><span>Pauline is a superstar developer!</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/pauline-haren-09708714a/" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="https://www.github.com/paulineharen/" class="fa fa-github" aria-hidden="true"></a>
+            <a href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+<div class="profileCard flexCard2">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>Julie Khov</p>
+            <img src="https://assets.codepen.io/3163723/Julie_1.png" height="60%" width="60%"/>
+            <p>description</p>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>Julie Khov<br><span>Julie is a front-end wizard!</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/juliekhov/" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="https://www.github.com/juliekhov" class="fa fa-github" aria-hidden="true"></a>
+            <a target="_blank" href="mailto:hello@juliekhov.com?subject=You've Got Mail!" class="fa fa-envelope" aria-hidden="true"></a>
+            <a target="_blank" href="https://twitter.com/khov_julie" class="fa fa-twitter" aria-hidden="true"></a>
+            <a target="_blank" href="https://www.instagram.com/julie.khov/" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+
+<div class="profileCard flexCard3">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>Mark Hillin</p>
+            <img src="https://assets.codepen.io/3163723/Mark.png" height="60%" width="60%"/>
+            <p>description</p>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>Mark Hillin<br><span>Mark is a REACT language NINJA!</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/hillinm/" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="https://www.github.com/hillinm/" class="fa fa-github" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+<div class="tinySpacer" class="spacer"></div>
+
+
+
+
+<div class="profileCard flexCard4">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>Angelyn Liem</p>
+            <img src="https://assets.codepen.io/3163723/Angelyn.png" height="60%" width="60%"/>
+            <p>description</p>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>Angelyn Liem<br><span>Outspoken, organized, and friendly.</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/angelynaliem/" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="https://www.github.com/angelynaliem/" class="fa fa-github" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+
+<div class="profileCard flexCard5">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>Jonathan Canela</p>
+            <img src="https://assets.codepen.io/3163723/Jonathan_1.png" height="60%" width="60%"/>
+            <p>description</p>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>Jonathan Canela<br><span>Confident and practised developer.</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="" class="fa fa-github" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+
+<div class="profileCard flexCard6">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>Yinmi Alas</p>
+            <img src="https://assets.codepen.io/3163723/Yinmi_1.png" height="60%" width="60%"/>
+            <p>description</p>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>Yinmi Alas<br><span>Great speaker and DS champion.</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/yinmi-alas/" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="https://www.github.com/yinmialas/" class="fa fa-github" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="tinySpacer" class="spacer"></div>
+<div class="spacer"></div>
+
+
+<div class="profileCard flexCard7">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>Rose Wachira</p>
+            <img src="https://assets.codepen.io/3163723/rose.jpg" height="60%" width="60%"/>
+            <p>description</p>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>Rose Wachira<br><span>Soft-spoken, but has strong ideas.</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="https://www.github.com/murugis/" class="fa fa-github" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+
+<div class="profileCard flexCard8">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>Henry Melendez</p>
+            <img src="https://assets.codepen.io/3163723/Henry_1.png" height="60%" width="60%"/>
+            <p>description</p>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>Henry Melendez<br><span>Hard worker and data-model master.</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/Henrymelendez/" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="https://www.github.com/Henrymelendez/" class="fa fa-github" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+
+<div class="profileCard flexCard9">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>Krisda Luengthada</p>
+            <img src="https://assets.codepen.io/3163723/Kris_1.png" height="60%" width="60%"/>
+            <p>description</p>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>Krisda Luengthada<br><span>
+          Project leader with iron charisma and coding might.</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/krisda-luengthada/" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="https://www.github.com/biskoi/" class="fa fa-github" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="tinySpacer" class="spacer"></div>
+
+<div class="spacer"></div>
+
+<div class="profileCard flexCard10">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>profileName</p>
+            <img src="assets/anon.jpg" height="60%" width="60%"/>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>profileName<br><span>profileRole</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-github" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+
+<div class="profileCard flexCard11">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>profileName</p>
+            <img src="assets/anon.jpg" height="60%" width="60%"/>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>profileName<br><span>profileRole</span></h2>
+        <div class="social-icons">
+            <a target="_blank" href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-github" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a target="_blank" href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+
+<div class="profileCard flexCard12">
+    <!-- front-face is the front of the card -->
+    <div class="front-face">
+        <!-- contents of front of card -->
+        <div class="contents front">
+            <p>profileName</p>
+            <img src="assets/anon.jpg" height="60%" width="60%"/>
+        </div>
+    </div>
+    <!-- back-face is the back of the card -->
+    <div class="back-face">
+        <!-- contents of back of card -->
+        <div class="contents back">
+        <h2>profileName<br><span>profileRole</span></h2>
+        <div class="social-icons">
+            <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a href="#" class="fa fa-github" aria-hidden="true"></a>
+            <a href="#" class="fa fa-envelope" aria-hidden="true"></a>
+            <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+            <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+
+</section>
+
+</section>
+<section class="moveToBottom">
+<footer role="contentinfo" class="footeritem bottom">
+    <span class="footeritem footer1"><a href="index.html">Home</a></span>
+    <span class="footeritem footer2"><a href="about.html">About</a></span>
+    <span class="footeritem footer3"><a href="contact.html">Contact</a></span>
+    <span class="footeritem footer4"><a href="about.html">Team</a></span>
+    <span class="footeritem footer5">&#169; 2020 TopChill Inc.</span>
+</footer>
+</section>
+</section>
+
+
+    </nav>
+    <script src="app.js "></script>
+</body>
+<!--# Responsive-Design
+
+### Task 2: Minimum Viable Product
+
+Use the checklist below to guide your work today. Your final product should be presentable at mobile, tablet and a desktop-width.
+
+- [ X ] Insert a viewport meta tag into the head of the project with these html attributes: content="width=device-width, initial-scale=1 "
+- [ ] Introduce max-width media queries into your project at 800px and 500px
+- [ ] Add accessability features to your webpage
+- [ ] Design should closely follow the [mobile wireframe](Wireframes/) given for your chosen layout
+
+
+### Task 3: Stretch Goals
+
+Once you finish the minimum viable project, work on any of the following stretch goals:
+
+- [ ]  Test your website at several breakpoints and refactor code as needed. A few common breakpoints are below:
+  - [ ]  iPhone: 360×640
+  - [ ]  Laptop: 1366×768
+  - [ ]  Widescreen: 1920×1080
+- [ ] Test your webpage's accessibility with a screen reader like [this](https://support.google.com/accessibility/answer/7031755?hl=en)
+- [ ] Start over with min-width media queries to get a feel for how a mobile first approach would be like. I recommend making a branch of all your content in a new folder named "mobile-first " to keep it separate
+- [ ] Test your webpage's accessibility with a screen reader like [this](https://support.google.com/accessibility/answer/7031755?hl=en)
+
+-->
+
+</html>
