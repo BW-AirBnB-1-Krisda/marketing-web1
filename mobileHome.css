@@ -1,1 +1,278 @@
 /* mobile media queries for Home */
+
+@media (max-width: 500px) {
+
+
+    section.flexAbout div.flexAbout li .button {
+        padding: 6rem 4rem;
+        wrap: nowrap;
+    }
+
+    div.price li a.button {
+        wrap: wrap;
+        margin-top: 5em;
+        margin-right: 0rem;
+        text-align: justify;
+        font-size: 3vw;
+    }
+
+    div.barservice {
+        margin-right: 35rem;
+    }
+
+    div.inner-form {
+        /* position: absolute; */
+        /* top: 50vw;
+        left: 57vw; */
+        height: 25%;
+        width: 25%;
+        margin-right: 65vw;
+        display: inline-block
+    }
+
+    input#search {
+        width: 50%;
+    }
+
+    .s01 .inner-form .input-field {
+        width: 50%;
+    }
+
+    div.inner-form .button .btn-search {
+        padding: 1rem 1rem;
+    } 
+   
+   /* div.inner-form input {
+        height: 5vh;
+        width: 5vw;
+   } */
+
+    .legend {
+        top: 0;
+        left: 0;
+        width: 5vw;
+        height: 5vh;
+        margin-right: 100%;
+        font-size: 6vw;
+    }
+
+    #wrap {
+        margin: 30px;
+        width: calc(100% - 65vw);
+        height: calc(100% - 65vh);
+        margin: 0 0 0 auto;
+        padding: 0;
+        position: center;
+    }
+
+    /* #mobileSearch {
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    
+    #mobileSearch {
+        top:0px;
+        left:0px;
+        right:0px;
+    } */
+
+    .s01 form .inner-form .input-field.first-wrap {
+        width: calc(100% - -50px);
+    }
+
+    .s01 form .inner-form .input-field.second-wrap {
+        width: calc(100% - -50px);
+    }
+
+    .s01 form .inner-form .input-field.third-wrap {
+        width: calc(100% - -50px);
+    }
+
+    #moveMobileButton {
+        width: calc(100% - -40px);
+    }
+
+    div.input-field .first-wrap {
+        width: auto;
+    }
+
+    div.input-field .third-wrap {
+        width: 1rem;
+    }
+
+    div.inner-form .first-wrap {
+        width: 50%;
+    }
+
+    .s01 form .inner-form .input-field.third-wrap .btn-search {
+        width: calc(100% - 1rem);
+    }
+
+    .s01 form .inner-form .input-field.second-wrap {
+        width: calc(100% - -40px);       
+    }
+
+    div.inner-form .second-wrap {
+        width: 50%;
+    }
+
+    div.inner-form .third-wrap {
+        width: 50%;
+    } 
+    /* .s01 form .inner-form {
+        width: 50%;
+    } */
+
+    input#search {
+        width: 74vw;
+    }
+
+    input#location {
+        width: 74vw;
+    }
+
+    .button .btn-search {
+        margin-right: 50%;
+    } 
+
+    /* div.inner-form {
+        width: 5vw;
+        margin-right: 5vw;
+    } */
+
+    /* .s01 form .inner-form {
+        width: 0.01%;
+    } */
+
+    /* .s01 {
+        width: 0.01%;
+    } */
+
+    .history {
+        font-size: 3.5vw;
+        line-height: 1.5;
+        font-family: Helvetica;
+        text-align: justify;
+    }
+
+    .flexAbout h4{
+        font-size: 6.5vw;
+        margin-right: 0vw;
+    }
+
+
+    p.vacation {
+        height: 80%;
+        width: 75%;
+        padding: 0;
+        margin-left: 14vw;
+        font-size: 2.5vw;
+        align: center;
+    }
+
+    div.topchillabout {
+        margin: 0;
+    }
+
+    div.photo-container {
+        height: 10vh;
+        width: 45vw;
+        margin-left: 20%;
+    }
+
+    section.product {
+        height:auto;
+    }
+
+    div.price {
+        word-wrap: break-word;
+        margin: -4.5% 0 0.5% 15.5%;
+        height: 100%;
+        width: 56%;
+        align: justify;
+    }
+
+    div.barService li a.button span {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    /* div.barService li a.button span::before {
+        font-size: 8vw;
+    }
+
+    div.barService li a.button span::after {
+        font-size: 10vw;
+    } */
+
+    span.optimize {
+        font-size: 5vw;
+    }
+
+    span.tool {
+        font-size: 4vw;
+    }
+
+    div.product_info {
+        height: 2vh;
+    }
+
+    .section.parentFlex {
+        height: 95vh;
+        width: 150vw;
+    }
+
+    p.tinyText {
+        margin: 2%;
+    }
+
+    .BookNow {
+        padding: 1rem 100em;
+        margin: 0em;
+        font-size: 50vw;
+    }
+
+    section.parentFlex {
+        width: 250%;
+        font-size: 5vw;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .parentFlex .flexRelax {
+        height: 93vh;
+    }
+
+    .parentFlex .flexAgent {
+        height: 93vh;
+    }
+
+    .flexAgent p.card-text {
+        height: 250%;
+    }
+
+    footer {
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer.bottom {
+        padding:0;
+    }
+
+    footer.bottom a {
+        font-size: 4vw;
+        margin: 0 1%;
+        padding:0;
+        width:auto;
+    }
+
+    footer.bottom span.box5 {
+        font-size:4vw;
+        width:auto;
+    }
+
+
+}

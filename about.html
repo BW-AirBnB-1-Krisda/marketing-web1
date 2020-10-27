@@ -13,6 +13,8 @@
     <title>TopChill - Book Now!</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="tabletAbout.css">
+    <link rel="stylesheet" type="text/css" href="mobileAbout.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <style>
@@ -71,8 +73,8 @@ logged_out_greeting="Hello! How can we help you?">
                 <li><a href="about.html">About</a></li>
                 <li><a href="product.html">Product</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://top-chill-krisda.vercel.app/register">Register</a></li>
-                <li><a href="https://top-chill-krisda.vercel.app/login">Login</a></li>
+                <li><a href="https://top-chill-final.vercel.app/register">Register</a></li>
+                <li><a href="https://top-chill-final.vercel.app/login">Login</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -105,7 +107,7 @@ logged_out_greeting="Hello! How can we help you?">
                     be able to manage multiple properties at different locations and be able to make adjustments to their expectations for booking, as well as what they should be charging.</p>
                 <!--Marketing site replace placeholder copy with description of product. Be creative here. Really try and describe your project, your project's features and of course have a cool "About Us" page with relevant copy that describes your team members and their roles.-->
             </div>
-            <li><a class="button" class="BookNow" class="center" href="#"><span>Book Now!</span></a></li>
+            <a class="button" class="BookNow" class="center" href="#"><span>Book Now!</span></a>
         </div>
         <div class="flexAbout AboutItem2"></div>
     </section>
@@ -133,7 +135,7 @@ logged_out_greeting="Hello! How can we help you?">
 <div class="placeholder"></div> -->
 <!-- profileCard is card container -->
 <section class="card-container">
-<div class="profileCard flexCard1">
+<div id="paulineCard" class="profileCard flexCard1">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -159,7 +161,7 @@ logged_out_greeting="Hello! How can we help you?">
     </div>
 </div>
 
-<div class="spacer"></div>
+<div id="julieCard" class="spacer"></div>
 
 <div class="profileCard flexCard2">
     <!-- front-face is the front of the card -->
@@ -190,7 +192,7 @@ logged_out_greeting="Hello! How can we help you?">
 <div class="spacer"></div>
 
 
-<div class="profileCard flexCard3">
+<div id="markCard" class="profileCard flexCard3">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -222,7 +224,7 @@ logged_out_greeting="Hello! How can we help you?">
 
 
 
-<div class="profileCard flexCard4">
+<div id="angelynCard" class="profileCard flexCard4">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -251,7 +253,7 @@ logged_out_greeting="Hello! How can we help you?">
 <div class="spacer"></div>
 
 
-<div class="profileCard flexCard5">
+<div id="jonathanCard" class="profileCard flexCard5">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -280,7 +282,7 @@ logged_out_greeting="Hello! How can we help you?">
 <div class="spacer"></div>
 
 
-<div class="profileCard flexCard6">
+<div id="yinmiCard" class="profileCard flexCard6">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -310,7 +312,7 @@ logged_out_greeting="Hello! How can we help you?">
 <div class="spacer"></div>
 
 
-<div class="profileCard flexCard7">
+<div id="roseCard" class="profileCard flexCard7">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -339,7 +341,7 @@ logged_out_greeting="Hello! How can we help you?">
 <div class="spacer"></div>
 
 
-<div class="profileCard flexCard8">
+<div id="henryCard" class="profileCard flexCard8">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -368,7 +370,7 @@ logged_out_greeting="Hello! How can we help you?">
 <div class="spacer"></div>
 
 
-<div class="profileCard flexCard9">
+<div id="krisCard" class="profileCard flexCard9">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -399,7 +401,7 @@ logged_out_greeting="Hello! How can we help you?">
 
 <div class="spacer"></div>
 
-<div class="profileCard flexCard10">
+<div id="anon1Card" class="profileCard flexCard10">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -427,7 +429,7 @@ logged_out_greeting="Hello! How can we help you?">
 <div class="spacer"></div>
 
 
-<div class="profileCard flexCard11">
+<div id="anon2Card" class="profileCard flexCard11">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -455,7 +457,7 @@ logged_out_greeting="Hello! How can we help you?">
 <div class="spacer"></div>
 
 
-<div class="profileCard flexCard12">
+<div id="anon3Card" class="profileCard flexCard12">
     <!-- front-face is the front of the card -->
     <div class="front-face">
         <!-- contents of front of card -->
@@ -487,18 +489,18 @@ logged_out_greeting="Hello! How can we help you?">
 
 </section>
 <section class="moveToBottom">
-<footer role="contentinfo" class="footeritem bottom">
-    <span class="footeritem footer1"><a href="index.html">Home</a></span>
-    <span class="footeritem footer2"><a href="about.html">About</a></span>
-    <span class="footeritem footer3"><a href="contact.html">Contact</a></span>
-    <span class="footeritem footer4"><a href="about.html">Team</a></span>
-    <span class="footeritem footer5">&#169; 2020 TopChill Inc.</span>
+<footer role="contentinfo" class="bottom">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">Team</a>
+    <span class="box5">&#169; 2020 TopChill Inc.</span>
 </footer>
 </section>
 </section>
 
 
-    </nav>
+    <!-- </nav> -->
     <script src="app.js "></script>
 </body>
 <!--# Responsive-Design

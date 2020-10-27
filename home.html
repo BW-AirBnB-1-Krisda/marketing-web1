@@ -13,6 +13,8 @@
     <title>TopChill - Book Now!</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="tabletHome.css">
+    <link rel="stylesheet" type="text/css" href="mobileHome.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <style>
@@ -71,8 +73,8 @@ logged_out_greeting="Hello! How can we help you?">
                 <li><a href="about.html">About</a></li>
                 <li><a href="product.html">Product</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://top-chill-krisda.vercel.app/register">Register</a></li>
-                <li><a href="https://top-chill-krisda.vercel.app/login">Login</a></li>
+                <li><a href="https://top-chill-final.vercel.app/register">Register</a></li>
+                <li><a href="https://top-chill-final.vercel.app/login">Login</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -91,7 +93,7 @@ logged_out_greeting="Hello! How can we help you?">
             <div class="bottom-right">Bottom Right</div>-->
         <div class="centered">
             <!--Beginning of Search Bar-->
-            <div class="s01">
+            <div id="wrap" class="s01">
                 <form>
                   <fieldset>
                     <legend>find your getaway in seconds</legend>
@@ -100,7 +102,7 @@ logged_out_greeting="Hello! How can we help you?">
                     <div class="input-field first-wrap">
                       <input id="search" type="text" placeholder="hotel, flight, car ... " />
                     </div>
-                    <div class="input-field second-wrap">
+                    <div id="moveMobileButton" class="input-field second-wrap">
                       <input id="location" type="text" placeholder="location" />
                     </div>
                     <div class="input-field third-wrap">
@@ -147,9 +149,12 @@ logged_out_greeting="Hello! How can we help you?">
                                    <span class="optimize">USE OUR OPTIMIZED PRICING TOOL</span><br><br><br>
                                     Easy tool to make your travel plans a piece of cake.<br><br>
                                     Award-winning vetted properties for clean and comfortable surroundings.<br><br>
-                                    24-hour FREE bar service. A professional Chef add-on is also available.<br><br>
+              
                                 </span>
-                                <li><a class="button" class="BookNow" class="center" href="#"><span>Book Now!</span></a></li>
+                            </div><br>
+                            <div class="barService">
+                              24-hour FREE bar service.<br>A professional Chef add-on is also available.
+                              <li><a class="button" class="BookNow" class="center" href="#"><span>Book Now!</span></a></li>
                             </div>
                         </div>
                     </section>
@@ -242,7 +247,7 @@ logged_out_greeting="Hello! How can we help you?">
             </div>
     </section>
 
-    <section class="childFlex flexAgent">
+    <section id="makeBigAgent" class="childFlex flexAgent">
         <div class="card text-center">
             <div class="card-header">
               <span class="text-header">Agents</span><br><br>

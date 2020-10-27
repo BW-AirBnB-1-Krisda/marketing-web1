@@ -1,1 +1,164 @@
 /* mobile media queries for About */
+
+@media (max-width: 500px) {
+    div.topchillabout {
+        font-size: 25vw;
+        width: 90vw;
+        margin: 0;
+    }
+
+    p.history {
+        font-size: 3.5vw;
+        line-height: 1.5;
+        font-family: Helvetica;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .centered {
+        /* top | right | bottom | left */
+        padding: 50% 50%;  
+        font-size: 2rem;
+    }
+
+    .flexAbout h4{
+        font-size: 11vw;
+    }
+
+    .BookNow {
+        padding: 1rem 100em;
+        margin: 0em;
+        font-size: 50vw;
+    }
+
+    .card-container {
+        margin: 0;
+    }
+
+    .flexHeader {
+        height: 20vh;
+        width: 250vw;
+    }
+
+    div.front-face, div.back-face {
+        height: 69vh;
+        width: 55vw;
+        margin-top: 10vh;
+    }
+
+    .profileCard {
+        margin: 0 5% 0 0;
+    }
+
+    #paulineCard {
+        transform: translate(0, -180%);
+    }
+
+    #julieCard {
+        transform: translate(0, -200%);
+    }
+
+    #markCard {
+        transform: translate(0, -50%);
+    }
+
+    #angelynCard {
+        transform: translate(0, -50%);
+    }
+
+    #jonathanCard {
+        transform: translate(0, -50%);
+    }
+
+    #yinmiCard {
+        transform: translate(0, -50%);
+    }
+
+    #roseCard {
+        transform: translate(0, -50%);
+    }
+
+    #henryCard {
+        transform: translate(0, -50%);
+    }
+
+    #krisCard {
+        transform: translate(0, -50%);
+    }
+
+    #anon1Card {
+        transform: translate(0, 20);
+    }
+
+    #anon2Card {
+        transform: translate(0, -50%);
+    }
+
+    #anon3Card {
+        transform: translate(0, -150%);
+    }
+
+    div.contents {
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    div.contents p {
+        margin: 5% 0;
+    }
+
+    div.spacer {
+        height: 55vh;
+        width: 5vw;
+        margin-top: 5vh;
+        margin-left: 1vw;
+    }
+
+    .tinySpacer {
+        height: 1vh;
+        width: 55vw;
+    }
+
+    footer {
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer.bottom {
+        padding:0;
+    }
+
+    footer.bottom a {
+        font-size: 4vw;
+        margin: 0 1%;
+        padding:0;
+        width:auto;
+    }
+
+    span.whoWeAre {
+        font-size: 20vw;
+        width: 50%;
+    }
+
+    footer.bottom span.box5 {
+        font-size: 4vw;
+        width: auto;
+    }
+
+    section.card-container {
+        height: 1000vh;
+        width: 100vw;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-left: 18%;
+    }
+
+    div.card-container {
+        height: 100%;
+        width: 35vw;
+        margin: 0 100% 0 0;
+    }
+
+}
